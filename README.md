@@ -53,7 +53,7 @@ For windows the usbipd is needed to connect the device to WSL. Install it from h
 
 https://github.com/dorssel/usbipd-win/releases
 
-Afterwards reboot your PC (Windows ... 😑) and open the `cmd` as Administrator.
+Afterwards reboot your PC and open the `cmd` as Administrator.
 
 Then:
 ```
