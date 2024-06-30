@@ -19,6 +19,7 @@ The 8]axe uses 8 ASICs of type BM1366
 
 Compilation (Bootloader or CMSIS-DAP)
 ======================================
+Start WSL on your PC and go through the followig steps:
 
 ```bash
 # install curl
@@ -46,6 +47,48 @@ cd firmware/fw-L072KZ
 ./build.sh
 ```
 
+## Using it on Windows running WSL
+
+For windows the usbipd is needed to connect the device to WSL. Install it from here:
+
+https://github.com/dorssel/usbipd-win/releases
+
+Afterwards reboot your PC (Windows ... 😑) and open the `cmd` as Administrator.
+
+Then:
+```
+C:\Windows\System32>usbipd list
+Connected:
+BUSID  VID:PID    DEVICE                                                        STATE
+2-1    046d:c52b  Logitech USB Input Device, USB-Eingabegerät                   Not shared
+3-1    0c76:161f  USB PnP Audio Device, USB-Eingabegerät                        Not shared
+3-2    046d:c52b  Logitech USB Input Device, USB-Eingabegerät                   Not shared
+3-3    046d:c548  Logitech USB Input Device, USB-Eingabegerät                   Not shared
+4-1    8087:0aa7  Intel(R) Wireless Bluetooth(R)                                Not shared
+4-2    2e8a:000c  Picoprobe CMSIS-DAP v2, Serielles USB-Gerät (COM3)            Attached
+```
+
+Note the `BUSID` for the STM32. Then
+
+```
+C:\Windows\System32> usbipd bind --busid 4-2
+```
+
+Afterwards start your WSL Linux
+
+Then attach the device with:
+```
+C:\Windows\System32> usbipd attach --wsl --busid 4-2
+```
+
+When it is running you can check in your WSL-Linux if the probe is detected:
+```
+probe-rs list
+
+The following debug probes were found:
+[0]: Picoprobe CMSIS-DAP (VID: 2e8a, PID: 000c, Serial: E66138528337A532, CmsisDap)
+```
+
 Installation via USB Bootloader on board with `BOOT` button
 ===========================================================
 The STM32L072CB variant has an integrated DFU Bootloader that starts when pressing the `BOOT` button during reset.
@@ -63,14 +106,13 @@ DEFMT_LOG=info cargo objcopy --release --bin qaxe -- -O binary 0xaxe.bin
 # install dfu-utils
 sudo apt-get install dfu-util
 
-now start the stm32 in DFU mode by pressing `boot` 
-
 # after booting, list the devices
 dfu-util --list
 
 # flash the binary
 dfu-util -a 0 -s 0x08000000:leave -D 0xaxe.bin
 ```
+
 
 
 
