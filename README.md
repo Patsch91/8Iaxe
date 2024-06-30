@@ -1,22 +1,19 @@
-# 0xaxe
+# 8]axe
 
-0xAxe is a 16-ASIC-BM1366 Miner based on the [QAxe](https://github.com/shufps/qaxe)
+The 8]axe is a 8-ASIC-BM1366 Miner based on the [0xaxe](https://github.com/shufps/0xaxe)
 
 <img src="https://github.com/shufps/0xaxe/assets/3079832/f278c0d4-3be7-44aa-b233-c5c798653ac6" width="600px">
 
 
-**rev1**: not tested</br>
-**rev1.1**: working but needs some manual fixes</br>
-**rev1.2**: should be working without fixes, but not tested yet.</br>
+**rev1**: working at about 3.2-3,5TH/s with ~90 Watts on the wall</br>
 
-0xAxe is working (see screenshot at the end of the page to get an impression what to expect) 🥳
 
-**note**: The 0xAxe is not a stand-alone device because it only supports USB but it can be run connected to a Raspberry Pi without problems. Also multiple devices can be connected to a single Pi. 
+**note**: The 8]axe is not a stand-alone device because it only supports USB. It can be run connected to a Raspberry Pi without problems. Also multiple devices can be connected to a single Pi. 
 
 ASICs
 =====
 
-The 0xAxe uses 16 ASICs of type BM1366
+The 8]axe uses 8 ASICs of type BM1366
 
 ![image](https://github.com/shufps/0xaxe/assets/3079832/0f3c1088-be82-4bf8-898d-34b336d1b7bd)
 
@@ -76,30 +73,6 @@ dfu-util -a 0 -s 0x08000000:leave -D 0xaxe.bin
 ```
 
 
-Installation via CMSIS-DAP Programmer
-=====================================
-
-**note**: Using CMSIS-DAP and PicoProbe is only interesting for developers trying to alter the firmware.
-
-As programming/debug adapter the Picoprobe firmware running on a Raspi Pico works best: <br>
-https://github.com/rp-rs/rp2040-project-template/blob/main/debug_probes.md / https://github.com/raspberrypi/picoprobe/releases/tag/picoprobe-cmsis-v1.0.3
-<br>
-<br>
-There also is a little board with only 3 parts that gives a nice low-cost solution to flash the Qaxe:<br>
-https://github.com/shufps/raspi-pico-dap
-
-On `rev3` there should be the option to boot the stm32 (by pressing the `boot`-button on reset) into DFU-Bootloader mode what makes flashing via USB and without CMSIS-DAP programmer possible.
-
-## Flashing
-
-After the source was compiled it is flashed by:
-
-```bash
-# build firmware for L072
-cd firmware/fw-L072KZ
-# run firmware (this also flashes it to the stm32)
-./run.sh
-```
 
 Mining Client
 =============
