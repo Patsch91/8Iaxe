@@ -2,7 +2,7 @@
 
 The 8]axe is a 8-ASIC-BM1366 Miner based on the [0xaxe](https://github.com/shufps/0xaxe)
 
-<img src="https://github.com/shufps/0xaxe/assets/3079832/f278c0d4-3be7-44aa-b233-c5c798653ac6" width="600px">
+<img src="https://github.com/Patsch91/8Iaxe/blob/main/8Iaxe%20assembled.png" width="600px">
 
 
 **rev1**: working at about 3.2-3,5TH/s with ~90 Watts on the wall</br>
@@ -15,7 +15,7 @@ ASICs
 
 The 8]axe uses 8 ASICs of type BM1366
 
-![image](https://github.com/shufps/0xaxe/assets/3079832/0f3c1088-be82-4bf8-898d-34b336d1b7bd)
+![image](https://github.com/Patsch91/8Iaxe/blob/main/8Iaxe%20pcb.png)
 
 Compilation (Bootloader or CMSIS-DAP)
 ======================================
@@ -77,7 +77,7 @@ dfu-util -a 0 -s 0x08000000:leave -D 0xaxe.bin
 Mining Client
 =============
 
-![image](https://github.com/shufps/0xaxe/assets/3079832/8c144fcf-1d3e-4634-a884-1094abb9330f)
+![image]
 
 
 Stratum Mining Client:<br>
