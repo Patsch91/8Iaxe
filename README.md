@@ -127,7 +127,7 @@ https://github.com/shufps/piaxe-miner
 
 Misc
 ====
-If you like this project and want to support future work, feel free to donate to: `bc1q29hp4fqtks2wzpmfwtpac64fnr8ujw2nvnra04`
+If you like this project and want to support future work, feel free to donate to: (https://github.com/shufps/0xaxe)
 
 
 
