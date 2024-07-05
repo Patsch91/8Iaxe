@@ -141,7 +141,7 @@ miner: 0xaxe
 Mining Client
 =============
 
-![image]
+![image](https://github.com/Patsch91/8Iaxe/blob/main/Dashboard.png)
 
 
 Stratum Mining Client:<br>
