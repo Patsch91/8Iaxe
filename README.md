@@ -113,7 +113,29 @@ dfu-util --list
 dfu-util -a 0 -s 0x08000000:leave -D 0xaxe.bin
 ```
 
+Config 
+=============
+Use the "config.yml.example" of the [Piaxe-Miner](https://github.com/shufps/piaxe-miner) and change it as follows:
 
+```bash
+debug_bm1366: false
+verify_solo: false
+miner: 0xaxe
+
+# works only with public pool
+#suggest_difficulty: 2048
+
+0xaxe:
+  name: 8]axe
+  chips: 8
+  fan_speed_1: 0.8
+  asic_frequency: 480
+  extranonce2_interval: 1.5
+  serial_port_asic: "/dev/ttyACM0"
+  serial_port_ctrl: "/dev/ttyACM1"
+
+...
+```
 
 
 Mining Client
