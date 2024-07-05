@@ -55,6 +55,8 @@ https://github.com/dorssel/usbipd-win/releases
 
 Afterwards reboot your PC and open the `cmd` as Administrator.
 
+Connect the USB to your PC and power on the 12V while pressing the BOOT Button to start the device in BOOT-Mode
+
 Then:
 ```
 C:\Windows\System32>usbipd list
