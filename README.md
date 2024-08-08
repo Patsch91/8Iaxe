@@ -2,10 +2,10 @@
 
 The 8]axe is a 8-ASIC-BM1366 Miner based on the [0xaxe](https://github.com/shufps/0xaxe)
 
-<img src="https://github.com/Patsch91/8Iaxe/blob/main/8Iaxe%20assembled.png" width="600px">
+<img src="https://github.com/Patsch91/8Iaxe/blob/main/Platine.png" width="600px">
 
 
-**rev1**: averaging at about 3.3-3,6TH/s with ~90 Watts on the wall on default settings (485Mhz) </br>
+**rev1 + rev2**: averaging at about 3.3-3,6TH/s with ~90 Watts on the wall on default settings (485Mhz) </br>
 
 
 **note**: The 8]axe is not a stand-alone device because it only supports USB. It can be run connected to a Raspberry Pi without problems. Also multiple devices can be connected to a single Pi. 
