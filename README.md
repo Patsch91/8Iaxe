@@ -5,8 +5,8 @@ The 8]axe is a 8-ASIC-BM1366 Miner based on the [0xaxe](https://github.com/shufp
 <img src="https://github.com/Patsch91/8Iaxe/blob/main/Platine.png" width="600px">
 
 
-**rev1 + rev2**: averaging at about 3.3-3,6TH/s with ~90 Watts on the wall on default settings (485Mhz) </br>
-
+**rev1**: averaging at about 3.3-3,6TH/s with ~90 Watts on the wall on default settings (485Mhz) </br>
+**rev2**: added boost converter to eliminate the extra 12V PSU / different design to fit vertain enclosures
 
 **note**: The 8]axe is not a stand-alone device because it only supports USB. It can be run connected to a Raspberry Pi without problems. Also multiple devices can be connected to a single Pi. 
 
@@ -148,6 +148,16 @@ Mining Client
 
 Stratum Mining Client:<br>
 https://github.com/shufps/piaxe-miner
+
+
+Case
+=============
+<img src="https://github.com/Patsch91/8Iaxe/blob/main/case.jpg" width="500px">
+<img src="https://github.com/Patsch91/8Iaxe/blob/main/case2.jpg" width="500px">
+
+I used a 80x160x170 aluminum case like this one: [Amazon](https://www.amazon.de/Aluminium-Projektbox-Mattschwarzer-DIY-Leiterplattenanschluss-W%C3%A4rmeableitungsgeh%C3%A4use-Bedienen/dp/B0CGGSVM8F/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3NMRXLZY6ALUN&dib=eyJ2IjoiMSJ9.0MLZnspoRUt-5Sq-UXD83eHRPPewKvMh4lus8XXQpkgDJRroXYZdpFcvkPHZnSEZWGdyZPu25JsKw8C_Gw7j3U3yo7FGxp-UKuHRwNwGErpQnLGFtEGB8CJPhlUupGPSyBMCgfSQbhhh6rR9keuntOinXBiLTcwFkg9jAHzRan196B2bXwHWc_GQhccHhde_KeXf4lkzuWefDuMZS-GZUgLpMEkL2ri5-xO686sFxk3LH6hBDYjgFnlqzBNBpYp2-c1hxcX88ikJwDevu7zkgC_WFYcVderTFYBcHsyTKOc.TUGJK2RRMmqnw5Lux7s7qib6OQUQhYEMLp2vokTvp34&dib_tag=se&keywords=80x160x170+case&qid=1723150526&sprefix=80x160x170+case%2Caps%2C94&sr=8-3)
+
+Added 2x80mm Noctua Fans to get it pretty silent 
 
 Misc
 ====
