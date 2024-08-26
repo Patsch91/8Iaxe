@@ -8,9 +8,11 @@ The 8]axe is a 8-ASIC-BM1366 Miner based on the [0xaxe](https://github.com/shufp
 **rev1**: averaging at about 3.3-3,6TH/s with ~90 Watts on the wall on default settings (485Mhz) </br>
 **rev2**: added boost converter to eliminate the extra 12V PSU / different design to fit vertain enclosures
 
+
 **note**: The 8]axe is not a stand-alone device because it only supports USB. It can be run connected to a Raspberry Pi without problems. Also multiple devices can be connected to a single Pi. 
 
 **WARNING**: The 8]Axe working with Voltage Domains is the end level boss for Pros. It's hard to get it working properly. The main reason is the powering scheme that uses 4 different voltage domain. It's difficult to get it into balance properly and needs very good and uniform cooling. The device works but can be super frustrating until it really is mining as it should. 
+Therefore there is some WIP to eliminate the voltage-domains and chaining 8 Asics in one Domain instead.
 ```
 
 ASICs
